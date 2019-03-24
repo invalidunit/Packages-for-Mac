@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKGPreferencesWindowController">
+            <connections>
+                <outlet property="_toolBar" destination="33" id="39"/>
+                <outlet property="window" destination="31" id="40"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="30" customClass="NSApplication"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" visibleAtLaunch="NO" animationBehavior="default" id="31">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="94" y="379" width="460" height="107"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+            <value key="minSize" type="size" width="460" height="107"/>
+            <view key="contentView" id="32">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="2B7F7C8F-CD2E-4C52-89EA-726129613D12" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="33">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="preferencepane.general" label="通用" paletteLabel="通用" image="NSPreferencesGeneral" id="34">
+                        <connections>
+                            <action selector="showPane:" target="-2" id="42"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="preferencepane.files" label="文件" paletteLabel="文件" tag="1" image="FilesPreferences" id="35">
+                        <connections>
+                            <action selector="showPane:" target="-2" id="43"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="preferencepane.build" label="编译" paletteLabel="编译" tag="2" image="BuildPreferencesTemplate" id="36">
+                        <connections>
+                            <action selector="showPane:" target="-2" id="44"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="preferencepane.templates" label="模板" paletteLabel="模板" tag="3" image="TemplatesPreferences" id="37">
+                        <connections>
+                            <action selector="showPane:" target="-2" id="45"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="preferencepane.advanced" label="高级" paletteLabel="高级" tag="4" image="NSAdvanced" id="38">
+                        <connections>
+                            <action selector="showPane:" target="-2" id="46"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="34"/>
+                    <toolbarItem reference="35"/>
+                    <toolbarItem reference="36"/>
+                    <toolbarItem reference="37"/>
+                    <toolbarItem reference="38"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="41"/>
+                </connections>
+            </toolbar>
+        </window>
+    </objects>
+    <resources>
+        <image name="BuildPreferencesTemplate" width="128" height="128"/>
+        <image name="FilesPreferences" width="128" height="128"/>
+        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSPreferencesGeneral" width="32" height="32"/>
+        <image name="TemplatesPreferences" width="128" height="128"/>
+    </resources>
+</document>
