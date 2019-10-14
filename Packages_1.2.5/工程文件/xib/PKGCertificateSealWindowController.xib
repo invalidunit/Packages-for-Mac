@@ -1,223 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
-    <data>
-        <object class="NSArray" key="IBDocument.PluginDependencies">
-            <bool key="EncodedWithXMLCoder">YES</bool>
-            <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-        </object>
-        <object class="NSMutableDictionary" key="IBDocument.Metadata">
-            <bool key="EncodedWithXMLCoder">YES</bool>
-            <object class="NSArray" key="dict.sortedKeys" id="0">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-            </object>
-            <object class="NSMutableArray" key="dict.values">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-            </object>
-        </object>
-        <object class="NSMutableArray" key="IBDocument.RootObjects" id="1">
-            <bool key="EncodedWithXMLCoder">YES</bool>
-            <object class="NSCustomObject" id="2">
-                <string key="NSClassName">PKGCertificateSealWindowController</string>
-            </object>
-            <object class="NSCustomObject" id="3">
-                <string key="NSClassName">FirstResponder</string>
-            </object>
-            <object class="NSCustomObject" id="4">
-                <string key="NSClassName">NSApplication</string>
-            </object>
-            <object class="NSWindowTemplate" id="5">
-                <string key="NSWindowRect">{{196, 240}, {74, 74}}</string>
-                <nil key="NSUserInterfaceItemIdentifier"/>
-                <string key="NSMaxSize">{10000000000000, 10000000000000}</string>
-                <string key="NSWindowTitle"></string>
-                <object class="NSView" key="NSWindowView" id="6">
-                    <nil key="NSNextResponder"/>
-                    <object class="NSMutableArray" key="NSSubviews">
-                        <bool key="EncodedWithXMLCoder">YES</bool>
-                        <object class="NSCustomView" id="7">
-                            <reference key="NSNextResponder" ref="6"/>
-                            <reference key="NSSuperview" ref="6"/>
-                            <string key="NSClassName">PKGCertificateSealView</string>
-                            <int key="NSvFlags">268</int>
-                            <string key="NSFrameSize">{74, 74}</string>
-                        </object>
-                    </object>
-                    <int key="NSvFlags">256</int>
-                    <string key="NSFrameSize">{74, 74}</string>
-                </object>
-                <bool key="NSWindowIsRestorable">NO</bool>
-                <string key="NSScreenRect">{{0, 0}, {2560, 1577}}</string>
-                <int key="NSWindowBacking">2</int>
-                <int key="NSWTFlags">1618482176</int>
-                <string key="NSWindowClass">NSWindow</string>
-                <nil key="NSViewClass"/>
-            </object>
-            <object class="NSMenu" id="8">
-                <string key="NSTitle"></string>
-                <object class="NSMutableArray" key="NSMenuItems">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                    <object class="NSMenuItem" id="9">
-                        <reference key="NSMenu" ref="8"/>
-                        <int key="NSMnemonicLoc">2147483647</int>
-                        <string key="NSKeyEquiv"></string>
-                        <string type="base64-UTF8" key="NSTitle">UmVtb3Zl4oCm</string>
-                        <object class="NSCustomResource" key="NSOnImage" id="12">
-                            <string key="NSClassName">NSImage</string>
-                            <string key="NSResourceName">NSMenuCheckmark</string>
-                        </object>
-                        <object class="NSCustomResource" key="NSMixedImage" id="13">
-                            <string key="NSClassName">NSImage</string>
-                            <string key="NSResourceName">NSMenuMixedState</string>
-                        </object>
-                    </object>
-                </object>
-            </object>
-        </object>
-        <object class="IBObjectContainer" key="IBDocument.Objects">
-            <object class="NSMutableArray" key="connectionRecords">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-                <object class="IBConnectionRecord">
-                    <object class="IBOutletConnection" key="connection">
-                        <string key="label">_sealView</string>
-                        <reference key="source" ref="2"/>
-                        <reference key="destination" ref="7"/>
-                    </object>
-                    <int key="connectionID">8</int>
-                </object>
-                <object class="IBConnectionRecord">
-                    <object class="IBOutletConnection" key="connection">
-                        <string key="label">window</string>
-                        <reference key="source" ref="2"/>
-                        <reference key="destination" ref="5"/>
-                    </object>
-                    <int key="connectionID">9</int>
-                </object>
-                <object class="IBConnectionRecord">
-                    <object class="IBOutletConnection" key="connection">
-                        <string key="label">delegate</string>
-                        <reference key="source" ref="5"/>
-                        <reference key="destination" ref="2"/>
-                    </object>
-                    <int key="connectionID">10</int>
-                </object>
-                <object class="IBConnectionRecord">
-                    <object class="IBOutletConnection" key="connection">
-                        <string key="label">menu</string>
-                        <reference key="source" ref="7"/>
-                        <reference key="destination" ref="8"/>
-                    </object>
-                    <int key="connectionID">11</int>
-                </object>
-                <object class="IBConnectionRecord">
-                    <object class="IBActionConnection" key="connection">
-                        <string key="label">removeCertificate:</string>
-                        <reference key="source" ref="3"/>
-                        <reference key="destination" ref="9"/>
-                    </object>
-                    <int key="connectionID">12</int>
-                </object>
-                <object class="IBConnectionRecord">
-                    <object class="IBActionConnection" key="connection">
-                        <string key="label">showCertificate:</string>
-                        <reference key="source" ref="2"/>
-                        <reference key="destination" ref="7"/>
-                    </object>
-                    <int key="connectionID">13</int>
-                </object>
-            </object>
-            <object class="IBMutableOrderedSet" key="objectRecords">
-                <object class="NSArray" key="orderedObjects">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">0</int>
-                        <reference key="object" ref="0"/>
-                        <reference key="children" ref="1"/>
-                        <nil key="parent"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">-2</int>
-                        <reference key="object" ref="2"/>
-                        <reference key="parent" ref="0"/>
-                        <string key="objectName">File's Owner</string>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">-1</int>
-                        <reference key="object" ref="3"/>
-                        <reference key="parent" ref="0"/>
-                        <string key="objectName">First Responder</string>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">2</int>
-                        <reference key="object" ref="4"/>
-                        <reference key="parent" ref="0"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">3</int>
-                        <reference key="object" ref="5"/>
-                        <object class="NSMutableArray" key="children">
-                            <bool key="EncodedWithXMLCoder">YES</bool>
-                            <reference ref="6"/>
-                        </object>
-                        <reference key="parent" ref="0"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">4</int>
-                        <reference key="object" ref="6"/>
-                        <object class="NSMutableArray" key="children">
-                            <bool key="EncodedWithXMLCoder">YES</bool>
-                            <reference ref="7"/>
-                        </object>
-                        <reference key="parent" ref="5"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">5</int>
-                        <reference key="object" ref="7"/>
-                        <reference key="parent" ref="6"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">6</int>
-                        <reference key="object" ref="8"/>
-                        <object class="NSMutableArray" key="children">
-                            <bool key="EncodedWithXMLCoder">YES</bool>
-                            <reference ref="9"/>
-                        </object>
-                        <reference key="parent" ref="0"/>
-                    </object>
-                    <object class="IBObjectRecord">
-                        <int key="objectID">7</int>
-                        <reference key="object" ref="9"/>
-                        <reference key="parent" ref="8"/>
-                    </object>
-                </object>
-            </object>
-            <object class="NSMutableDictionary" key="flattenedProperties">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-                <object class="NSArray" key="dict.sortedKeys">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                </object>
-                <object class="NSMutableArray" key="dict.values">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                </object>
-            </object>
-            <object class="NSMutableDictionary" key="unlocalizedProperties">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-                <reference key="dict.sortedKeys" ref="0"/>
-                <object class="NSMutableArray" key="dict.values">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                </object>
-            </object>
-            <nil key="activeLocalization"/>
-            <object class="NSMutableDictionary" key="localizations">
-                <bool key="EncodedWithXMLCoder">YES</bool>
-                <reference key="dict.sortedKeys" ref="0"/>
-                <object class="NSMutableArray" key="dict.values">
-                    <bool key="EncodedWithXMLCoder">YES</bool>
-                </object>
-            </object>
-            <nil key="sourceID"/>
-            <int key="maxID">13</int>
-        </object>
-        <object class="IBClassDescriber" key="IBDocument.Classes"/>
-        <string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
-    </data>
-</archive>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKGCertificateSealWindowController">
+            <connections>
+                <outlet property="_sealView" destination="5" id="8"/>
+                <outlet property="window" destination="3" id="9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="2" customClass="NSApplication"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="3">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="74" height="74"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+            <view key="contentView" id="4">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="5" customClass="PKGCertificateSealView">
+                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <action selector="showCertificate:" target="-2" id="13"/>
+                            <outlet property="menu" destination="6" id="11"/>
+                        </connections>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="10"/>
+            </connections>
+        </window>
+        <menu id="6">
+            <items>
+                <menuItem title="Remove…" id="7">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="removeCertificate:" target="-1" id="12"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
