@@ -8,148 +8,167 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PKGPreferencePaneGeneralViewController">
             <connections>
-                <outlet property="_defaultReferenceStylePopUpButton" destination="204" id="230"/>
-                <outlet property="_visibleDistributionPackagePanePopUpButton" destination="215" id="231"/>
-                <outlet property="_visibleDistributionProjectPanePopUpButton" destination="223" id="232"/>
-                <outlet property="_visiblePackageProjectPanePopUpButton" destination="207" id="233"/>
-                <outlet property="view" destination="191" id="234"/>
+                <outlet property="_defaultNewProjectLocationPopUpButton" destination="212" id="254"/>
+                <outlet property="_defaultReferenceStylePopUpButton" destination="249" id="255"/>
+                <outlet property="_visibleDistributionPackagePanePopUpButton" destination="226" id="256"/>
+                <outlet property="_visibleDistributionProjectPanePopUpButton" destination="240" id="257"/>
+                <outlet property="_visiblePackageProjectPanePopUpButton" destination="218" id="258"/>
+                <outlet property="view" destination="209" id="259"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="190" customClass="NSApplication"/>
-        <customView id="191" customClass="PKGControlledView">
-            <rect key="frame" x="0.0" y="0.0" width="465" height="301"/>
+        <customObject id="208" customClass="NSApplication"/>
+        <customView id="209" customClass="PKGControlledView">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="299"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <textField verticalHuggingPriority="750" id="198">
-                    <rect key="frame" x="18" y="54" width="112" height="17"/>
+                <textField verticalHuggingPriority="750" id="210">
+                    <rect key="frame" x="18" y="261" width="194" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="参考风格" id="199">
-                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="默认新项目位置:" id="211">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <popUpButton verticalHuggingPriority="750" id="204">
-                    <rect key="frame" x="121" y="17" width="228" height="26"/>
+                <popUpButton verticalHuggingPriority="750" id="212">
+                    <rect key="frame" x="216" y="255" width="227" height="26"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="205" customClass="PKGReferencePopupButtonCell">
+                    <popUpButtonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="215" id="213">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="214">
+                            <items>
+                                <menuItem title="-" state="on" id="215"/>
+                                <menuItem isSeparatorItem="YES" id="217"/>
+                                <menuItem title="选择…" tag="1" id="216"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchDefaultNewProjectLocation:" target="-2" id="264"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="249">
+                    <rect key="frame" x="216" y="214" width="227" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="250" customClass="PKGReferencePopupButtonCell">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
-                        <menu key="menu" title="OtherViews" id="206"/>
+                        <menu key="menu" title="OtherViews" id="251"/>
                     </popUpButtonCell>
                     <connections>
-                        <action selector="switchDefaultReferenceStyle:" target="-2" id="237"/>
+                        <action selector="switchDefaultReferenceStyle:" target="-2" id="262"/>
                     </connections>
                 </popUpButton>
-                <textField verticalHuggingPriority="750" id="196">
-                    <rect key="frame" x="23" y="22" width="94" height="17"/>
+                <textField verticalHuggingPriority="750" id="252">
+                    <rect key="frame" x="59" y="219" width="153" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="默认样式:" id="197">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="默认参考样式:" id="253">
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <popUpButton verticalHuggingPriority="750" id="207">
-                    <rect key="frame" x="121" y="91" width="228" height="26"/>
+                <popUpButton verticalHuggingPriority="750" id="218">
+                    <rect key="frame" x="216" y="17" width="228" height="26"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="208">
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="219">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
-                        <menu key="menu" title="OtherViews" id="209">
+                        <menu key="menu" title="OtherViews" id="220">
                             <items>
-                                <menuItem title="项目" id="214"/>
-                                <menuItem title="设置" tag="1" id="211"/>
-                                <menuItem title="有效负载" tag="2" id="213"/>
-                                <menuItem title="脚本" tag="3" id="212"/>
-                                <menuItem title="注释" tag="4" id="210"/>
+                                <menuItem title="项目" id="225"/>
+                                <menuItem title="设置" tag="1" id="222"/>
+                                <menuItem title="有效负载" tag="2" id="224"/>
+                                <menuItem title="脚本" tag="3" id="223"/>
+                                <menuItem title="注释" tag="4" id="221"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
                     <connections>
-                        <action selector="switchDefaultVisiblePackageProjectPane:" target="-2" id="238"/>
+                        <action selector="switchDefaultVisiblePackageProjectPane:" target="-2" id="263"/>
                     </connections>
                 </popUpButton>
-                <popUpButton verticalHuggingPriority="750" id="215">
-                    <rect key="frame" x="121" y="161" width="228" height="26"/>
+                <popUpButton verticalHuggingPriority="750" id="226">
+                    <rect key="frame" x="216" y="97" width="228" height="26"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="216">
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="227">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
-                        <menu key="menu" title="OtherViews" id="217">
+                        <menu key="menu" title="OtherViews" id="228">
                             <items>
-                                <menuItem title="设置" id="220"/>
-                                <menuItem title="有效负载" tag="1" id="219"/>
-                                <menuItem title="脚本" tag="2" id="218"/>
+                                <menuItem title="设置" id="231"/>
+                                <menuItem title="有效负载" tag="1" id="230"/>
+                                <menuItem title="脚本" tag="2" id="229"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
                     <connections>
-                        <action selector="switchDefaultVisibleDistributionPackagePane:" target="-2" id="236"/>
+                        <action selector="switchDefaultVisibleDistributionPackagePane:" target="-2" id="261"/>
                     </connections>
                 </popUpButton>
-                <textField verticalHuggingPriority="750" id="194">
-                    <rect key="frame" x="42" y="167" width="76" height="17"/>
+                <textField verticalHuggingPriority="750" id="232">
+                    <rect key="frame" x="30" y="103" width="182" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="安装包:" id="195">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="安装包:" id="233">
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="202">
-                    <rect key="frame" x="30" y="128" width="100" height="17"/>
+                <textField verticalHuggingPriority="750" id="234">
+                    <rect key="frame" x="18" y="59" width="176" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="原始 Package" id="203">
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <textField verticalHuggingPriority="750" id="200">
-                    <rect key="frame" x="30" y="229" width="82" height="17"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="布局" id="201">
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <textField verticalHuggingPriority="750" id="221">
-                    <rect key="frame" x="54" y="197" width="64" height="17"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="项目:" id="222">
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <popUpButton verticalHuggingPriority="750" id="223">
-                    <rect key="frame" x="121" y="191" width="228" height="26"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <popUpButtonCell key="cell" type="push" title="设置" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="228" id="224">
-                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="menu"/>
-                        <menu key="menu" title="OtherViews" id="225">
-                            <items>
-                                <menuItem title="设置" state="on" id="228"/>
-                                <menuItem title="介绍" tag="1" id="227"/>
-                                <menuItem title="请求 &amp; 资源" tag="2" id="229"/>
-                                <menuItem title="注释" tag="3" id="226"/>
-                            </items>
-                        </menu>
-                    </popUpButtonCell>
-                    <connections>
-                        <action selector="switchDefaultVisibleDistributionProjectPane:" target="-2" id="235"/>
-                    </connections>
-                </popUpButton>
-                <textField verticalHuggingPriority="750" id="192">
-                    <rect key="frame" x="18" y="264" width="141" height="17"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="默认的可见选项卡" id="193">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="原始 Package 文档" id="235">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="236">
+                    <rect key="frame" x="18" y="171" width="164" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="默认的可见选项卡" id="237">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="238">
+                    <rect key="frame" x="37" y="134" width="175" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="项目:" id="239">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="240">
+                    <rect key="frame" x="216" y="128" width="228" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="设置" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="245" id="241">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="242">
+                            <items>
+                                <menuItem title="设置" state="on" id="245"/>
+                                <menuItem title="介绍" tag="1" id="244"/>
+                                <menuItem title="请求 &amp; 资源" tag="2" id="246"/>
+                                <menuItem title="注释" tag="3" id="243"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchDefaultVisibleDistributionProjectPane:" target="-2" id="260"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="247">
+                    <rect key="frame" x="77" y="22" width="135" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="默认可见标签:" id="248">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

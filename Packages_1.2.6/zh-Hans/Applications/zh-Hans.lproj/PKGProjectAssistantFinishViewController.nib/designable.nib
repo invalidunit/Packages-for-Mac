@@ -67,7 +67,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="12">
-                    <rect key="frame" x="17" y="308" width="191" height="17"/>
+                    <rect key="frame" x="17" y="308" width="320" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="选择项目的名称和保存位置:" id="13">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -96,7 +96,6 @@
                     </connections>
                 </button>
             </subviews>
-            <point key="canvasLocation" x="140" y="154.5"/>
         </customView>
         <customFormatter id="18" customClass="PKGFileNameFormatter"/>
     </objects>

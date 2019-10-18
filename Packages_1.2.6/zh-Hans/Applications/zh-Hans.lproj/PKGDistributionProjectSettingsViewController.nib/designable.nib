@@ -32,7 +32,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <textField verticalHuggingPriority="750" id="5">
-                            <rect key="frame" x="100" y="334" width="50" height="17"/>
+                            <rect key="frame" x="90" y="334" width="50" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="名称:" id="6">
                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -41,7 +41,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" id="7">
-                            <rect key="frame" x="106" y="302" width="44" height="17"/>
+                            <rect key="frame" x="96" y="302" width="44" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="路径:" id="8">
                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -74,7 +74,7 @@
                             </popUpButtonCell>
                         </popUpButton>
                         <textField verticalHuggingPriority="750" id="16" customClass="PKGFilePathTextField">
-                            <rect key="frame" x="155" y="300" width="472" height="22"/>
+                            <rect key="frame" x="146" y="300" width="481" height="22"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="17" customClass="PKGFilePathTextFieldCell">
                                 <font key="font" metaFont="system"/>
@@ -86,7 +86,7 @@
                             </connections>
                         </textField>
                         <textField verticalHuggingPriority="750" id="18">
-                            <rect key="frame" x="155" y="332" width="472" height="22"/>
+                            <rect key="frame" x="146" y="332" width="481" height="22"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="19">
                                 <font key="font" metaFont="system"/>
@@ -111,7 +111,7 @@
                             </connections>
                         </button>
                         <textField verticalHuggingPriority="750" id="22">
-                            <rect key="frame" x="91" y="241" width="59" height="17"/>
+                            <rect key="frame" x="81" y="241" width="59" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="格式:" id="23">
                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -120,7 +120,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" id="24">
-                            <rect key="frame" x="252" y="241" width="442" height="14"/>
+                            <rect key="frame" x="247" y="241" width="442" height="14"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="仅在 Mac OS X 10.6 或更高版本上支持 Flat 格式的安装程序插件。" id="25">
                                 <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -129,7 +129,7 @@
                             </textFieldCell>
                         </textField>
                         <popUpButton verticalHuggingPriority="750" id="26">
-                            <rect key="frame" x="153" y="235" width="89" height="26"/>
+                            <rect key="frame" x="144" y="235" width="89" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <popUpButtonCell key="cell" type="push" title="Flat" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="29" id="27">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -150,7 +150,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </customView>
                         <popUpButton verticalHuggingPriority="750" id="32">
-                            <rect key="frame" x="153" y="265" width="270" height="26"/>
+                            <rect key="frame" x="144" y="265" width="279" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <popUpButtonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="35" id="33" customClass="PKGReferenceFolderPopupButtonCell">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -161,7 +161,7 @@
                                         <menuItem isSeparatorItem="YES" id="36">
                                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                         </menuItem>
-                                        <menuItem title="Other…" tag="-1" id="37">
+                                        <menuItem title="其他…" tag="-1" id="37">
                                             <connections>
                                                 <action selector="setReferenceFolder:" target="-2" id="59"/>
                                             </connections>
@@ -171,7 +171,7 @@
                             </popUpButtonCell>
                         </popUpButton>
                         <textField verticalHuggingPriority="750" id="38">
-                            <rect key="frame" x="24" y="271" width="126" height="17"/>
+                            <rect key="frame" x="14" y="271" width="126" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="参考文件夹:" id="39">
                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -180,10 +180,10 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" id="40">
-                            <rect key="frame" x="18" y="371" width="72" height="18"/>
+                            <rect key="frame" x="18" y="371" width="54" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="pkg 编译" id="41">
-                                <font key="font" metaFont="systemBold" size="14"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="编译" id="41">
+                                <font key="font" size="14" name=".PingFangSC-Medium"/>
                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>

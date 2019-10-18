@@ -45,11 +45,11 @@
                         </connections>
                     </popUpButton>
                     <button verticalHuggingPriority="750" tag="1" id="9">
-                        <rect key="frame" x="530" y="13" width="82" height="32"/>
+                        <rect key="frame" x="538" y="13" width="74" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Okay" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="10">
+                        <buttonCell key="cell" type="push" title="好" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="10">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -64,7 +64,7 @@ DQ
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="12"/>
                     </imageView>
                     <button verticalHuggingPriority="750" id="13">
-                        <rect key="frame" x="443" y="13" width="80" height="32"/>
+                        <rect key="frame" x="463" y="13" width="67" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="14">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -80,14 +80,14 @@ Gw
                     <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="15" customClass="PKGContentBox">
                         <rect key="frame" x="20" y="61" width="586" height="244"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="contentView" id="gAz-sI-lbP">
+                        <view key="contentView" id="ZYB-Mp-UcK">
                             <rect key="frame" x="1" y="1" width="584" height="242"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                     </box>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="140" y="147.5"/>
+            <point key="canvasLocation" x="141" y="146.5"/>
         </window>
     </objects>
 </document>

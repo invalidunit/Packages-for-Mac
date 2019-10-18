@@ -30,7 +30,7 @@
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="4">
                     <rect key="frame" x="21" y="20" width="503" height="59"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <clipView key="contentView" autoresizesSubviews="NO" id="erB-Yx-hyf">
+                    <clipView key="contentView" autoresizesSubviews="NO" id="HxL-DE-q7i">
                         <rect key="frame" x="1" y="1" width="501" height="57"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -50,7 +50,7 @@
                     </scroller>
                 </scrollView>
                 <textField verticalHuggingPriority="750" id="9">
-                    <rect key="frame" x="18" y="101" width="159" height="17"/>
+                    <rect key="frame" x="18" y="101" width="131" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="在以下情况下选择:" id="10">
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -59,7 +59,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="11">
-                    <rect key="frame" x="245" y="213" width="9" height="17"/>
+                    <rect key="frame" x="180" y="213" width="9" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title=":" id="12">
                         <font key="font" metaFont="system"/>
@@ -68,7 +68,7 @@
                     </textFieldCell>
                 </textField>
                 <popUpButton verticalHuggingPriority="750" id="13">
-                    <rect key="frame" x="87" y="207" width="159" height="26"/>
+                    <rect key="frame" x="64" y="207" width="114" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <popUpButtonCell key="cell" type="push" title="始终启用" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="16" id="14">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -88,7 +88,7 @@
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="19">
                     <rect key="frame" x="21" y="138" width="503" height="59"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <clipView key="contentView" autoresizesSubviews="NO" id="t6g-pz-rzm">
+                    <clipView key="contentView" autoresizesSubviews="NO" id="YDF-xc-qSn">
                         <rect key="frame" x="1" y="1" width="501" height="57"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -108,7 +108,7 @@
                     </scroller>
                 </scrollView>
                 <textField verticalHuggingPriority="750" id="24">
-                    <rect key="frame" x="18" y="213" width="66" height="17"/>
+                    <rect key="frame" x="18" y="213" width="53" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="选择是" id="25">
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -117,6 +117,7 @@
                     </textFieldCell>
                 </textField>
             </subviews>
+            <point key="canvasLocation" x="140" y="154.5"/>
         </customView>
         <customView id="26">
             <rect key="frame" x="-6" y="0.0" width="178" height="33"/>

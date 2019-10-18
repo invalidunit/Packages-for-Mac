@@ -52,7 +52,7 @@
                 <box autoresizesSubviews="NO" borderType="line" titlePosition="noTitle" id="9">
                     <rect key="frame" x="-5" y="-9" width="367" height="318"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <view key="contentView" id="MhQ-hu-LVA">
+                    <view key="contentView" id="Dxv-2S-ZHL">
                         <rect key="frame" x="1" y="1" width="365" height="316"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -261,7 +261,6 @@
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="139.5" y="154.5"/>
         </customView>
     </objects>
     <resources>

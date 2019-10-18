@@ -40,7 +40,7 @@ Gw
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7">
-                        <rect key="frame" x="18" y="242" width="172" height="17"/>
+                        <rect key="frame" x="18" y="242" width="248" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="选择添加这些文件的选项:" id="8">
                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -65,7 +65,7 @@ DQ
                     <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="11" customClass="PKGContentBox">
                         <rect key="frame" x="20" y="61" width="518" height="173"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="contentView" id="OTd-jU-8gn">
+                        <view key="contentView" id="Fik-To-6B0">
                             <rect key="frame" x="1" y="1" width="516" height="171"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -78,7 +78,6 @@ DQ
                     </box>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="140" y="147.5"/>
         </window>
     </objects>
 </document>

@@ -180,7 +180,7 @@
                         <textField verticalHuggingPriority="750" id="439">
                             <rect key="frame" x="24" y="22" width="92" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="成功:" id="440">
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="成功后:" id="440">
                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -202,7 +202,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <button id="489">
-                            <rect key="frame" x="120" y="84" width="104" height="18"/>
+                            <rect key="frame" x="120" y="84" width="72" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="重定位" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="490">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -213,7 +213,7 @@
                             </connections>
                         </button>
                         <button id="479">
-                            <rect key="frame" x="120" y="40" width="113" height="18"/>
+                            <rect key="frame" x="120" y="40" width="110" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="遵循符号链接" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="480">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -224,7 +224,7 @@
                             </connections>
                         </button>
                         <textField verticalHuggingPriority="750" id="481">
-                            <rect key="frame" x="245" y="19" width="191" height="14"/>
+                            <rect key="frame" x="250" y="19" width="173" height="14"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="(Mac OS X 10.6 或更高版本)" id="482">
                                 <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -242,7 +242,7 @@
                             </textFieldCell>
                         </textField>
                         <button id="483">
-                            <rect key="frame" x="120" y="18" width="128" height="18"/>
+                            <rect key="frame" x="120" y="18" width="126" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="使用 HFS+ 压缩" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="484">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -253,7 +253,7 @@
                             </connections>
                         </button>
                         <button id="477">
-                            <rect key="frame" x="120" y="62" width="113" height="18"/>
+                            <rect key="frame" x="120" y="62" width="110" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="覆盖目录权限" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="478">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -273,7 +273,7 @@
                             </textFieldCell>
                         </textField>
                         <button id="473">
-                            <rect key="frame" x="120" y="128" width="276" height="18"/>
+                            <rect key="frame" x="120" y="128" width="210" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="需要提供管理员密码才能安装" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="474">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -284,7 +284,7 @@
                             </connections>
                         </button>
                         <button id="485">
-                            <rect key="frame" x="120" y="106" width="233" height="18"/>
+                            <rect key="frame" x="120" y="106" width="227" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="在安装之前需要关闭某些应用程序" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="486">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -295,7 +295,7 @@
                             </connections>
                         </button>
                         <button verticalHuggingPriority="750" id="487">
-                            <rect key="frame" x="342" y="97" width="83" height="32"/>
+                            <rect key="frame" x="347" y="97" width="80" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="push" title="选择…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="488">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -374,7 +374,7 @@
                             <rect key="frame" x="13" y="15" width="137" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="参考 Package" id="471">
-                                <font key="font" metaFont="system"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 <color key="textColor" white="0.39781021999999999" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>

@@ -23,7 +23,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="2" customClass="NSApplication"/>
         <customView id="3">
             <rect key="frame" x="0.0" y="0.0" width="363" height="549"/>
@@ -41,8 +41,8 @@
                 <textField verticalHuggingPriority="750" id="6">
                     <rect key="frame" x="10" y="467" width="86" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Architectures:" id="7">
-                        <font key="font" metaFont="smallSystem"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="层次结构:" id="7">
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -59,8 +59,8 @@
                 <textField verticalHuggingPriority="750" id="10">
                     <rect key="frame" x="99" y="495" width="56" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Modified:" id="11">
-                        <font key="font" metaFont="smallSystem"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="改性:" id="11">
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -91,20 +91,20 @@
                 <popUpButton verticalHuggingPriority="750" id="18" customClass="PKGPopUpButtonSource">
                     <rect key="frame" x="45" y="392" width="51" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <popUpButtonCell key="cell" type="push" title="Source:" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="21" id="19">
+                    <popUpButtonCell key="cell" type="push" title="资源:" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="21" id="19">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="smallSystem"/>
                         <menu key="menu" title="OtherViews" id="20">
                             <items>
-                                <menuItem title="Source:" hidden="YES" id="21"/>
-                                <menuItem title="Choose…" tag="1" id="22">
+                                <menuItem title="资源:" hidden="YES" id="21"/>
+                                <menuItem title="选择…" tag="1" id="22">
                                     <modifierMask key="keyEquivalentModifierMask"/>
                                     <connections>
                                         <action selector="chooseFileSystemItemSource:" target="-2" id="62"/>
                                     </connections>
                                 </menuItem>
                                 <menuItem isSeparatorItem="YES" tag="2" id="23"/>
-                                <menuItem title="Show in Finder" id="24">
+                                <menuItem title="在 Finder 显示" id="24">
                                     <modifierMask key="keyEquivalentModifierMask"/>
                                     <connections>
                                         <action selector="showInFinder:" target="-2" id="61"/>
@@ -142,10 +142,10 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="31">
-                    <rect key="frame" x="60" y="445" width="36" height="14"/>
+                    <rect key="frame" x="54" y="445" width="42" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Kind:" id="32">
-                        <font key="font" metaFont="smallSystem"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="种类:" id="32">
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -160,10 +160,10 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="35">
-                    <rect key="frame" x="28" y="421" width="67" height="14"/>
+                    <rect key="frame" x="22" y="421" width="73" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Reference:" id="36">
-                        <font key="font" metaFont="smallSystem"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="参考文件夹:" id="36">
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -171,13 +171,13 @@
                 <popUpButton verticalHuggingPriority="750" id="37">
                     <rect key="frame" x="98" y="416" width="220" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <popUpButtonCell key="cell" type="push" title="Relative to Project" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="40" id="38" customClass="PKGReferencePopupButtonCell">
+                    <popUpButtonCell key="cell" type="push" title="相对路径" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="40" id="38" customClass="PKGReferencePopupButtonCell">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="smallSystem"/>
                         <menu key="menu" title="OtherViews" id="39">
                             <items>
-                                <menuItem title="Relative to Project" state="on" tag="1" id="40"/>
-                                <menuItem title="Absolute Path" id="41"/>
+                                <menuItem title="相对路径" state="on" tag="1" id="40"/>
+                                <menuItem title="绝对路径" id="41"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
@@ -189,19 +189,19 @@
                     <rect key="frame" x="-13" y="-10" width="389" height="312"/>
                     <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                     <tabViewItems>
-                        <tabViewItem label="Attributes" identifier="tabviewitem.attributes" id="43">
+                        <tabViewItem label="属性" identifier="tabviewitem.attributes" id="43">
                             <view key="view" id="44">
                                 <rect key="frame" x="10" y="29" width="369" height="270"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                         </tabViewItem>
-                        <tabViewItem label="Rules" identifier="tabviewitem.rules" id="45">
+                        <tabViewItem label="规则" identifier="tabviewitem.rules" id="45">
                             <view key="view" id="46">
                                 <rect key="frame" x="10" y="25" width="369" height="274"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                         </tabViewItem>
-                        <tabViewItem label="Scripts" identifier="tabviewitem.scripts" id="47">
+                        <tabViewItem label="脚本" identifier="tabviewitem.scripts" id="47">
                             <view key="view" id="48">
                                 <rect key="frame" x="10" y="25" width="369" height="274"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,6 +210,7 @@
                     </tabViewItems>
                 </tabView>
             </subviews>
+            <point key="canvasLocation" x="140.5" y="154.5"/>
         </customView>
     </objects>
 </document>

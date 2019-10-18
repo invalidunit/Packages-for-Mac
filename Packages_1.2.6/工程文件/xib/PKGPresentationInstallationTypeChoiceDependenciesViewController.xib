@@ -21,7 +21,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="2" customClass="NSApplication"/>
         <customView id="3" customClass="PKGControlledView">
             <rect key="frame" x="0.0" y="0.0" width="544" height="251"/>
@@ -50,16 +50,16 @@
                     </scroller>
                 </scrollView>
                 <textField verticalHuggingPriority="750" id="9">
-                    <rect key="frame" x="18" y="101" width="159" height="17"/>
+                    <rect key="frame" x="18" y="101" width="131" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Choice is selected when:" id="10">
-                        <font key="font" metaFont="system"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="在以下情况下选择:" id="10">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="11">
-                    <rect key="frame" x="247" y="213" width="9" height="17"/>
+                    <rect key="frame" x="180" y="213" width="9" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title=":" id="12">
                         <font key="font" metaFont="system"/>
@@ -68,16 +68,16 @@
                     </textFieldCell>
                 </textField>
                 <popUpButton verticalHuggingPriority="750" id="13">
-                    <rect key="frame" x="86" y="207" width="159" height="26"/>
+                    <rect key="frame" x="64" y="207" width="114" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <popUpButtonCell key="cell" type="push" title="Always Enabled" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="16" id="14">
+                    <popUpButtonCell key="cell" type="push" title="始终启用" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="16" id="14">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" title="OtherViews" id="15">
                             <items>
-                                <menuItem title="Always Enabled" state="on" id="16"/>
-                                <menuItem title="Always Disabled" tag="1" id="17"/>
-                                <menuItem title="Enabled When" tag="2" id="18"/>
+                                <menuItem title="始终启用" state="on" id="16"/>
+                                <menuItem title="始终禁用" tag="1" id="17"/>
+                                <menuItem title="启用时间" tag="2" id="18"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
@@ -108,15 +108,16 @@
                     </scroller>
                 </scrollView>
                 <textField verticalHuggingPriority="750" id="24">
-                    <rect key="frame" x="18" y="213" width="66" height="17"/>
+                    <rect key="frame" x="18" y="213" width="53" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Choice is " id="25">
-                        <font key="font" metaFont="system"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="选择是" id="25">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
+            <point key="canvasLocation" x="140" y="154.5"/>
         </customView>
         <customView id="26">
             <rect key="frame" x="-6" y="0.0" width="178" height="33"/>

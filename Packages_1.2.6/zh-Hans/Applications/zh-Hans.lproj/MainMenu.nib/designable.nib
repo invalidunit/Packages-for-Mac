@@ -27,7 +27,7 @@
                             <menuItem isSeparatorItem="YES" id="7">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Packages 偏好设置…" keyEquivalent="," id="8">
+                            <menuItem title="偏好设置…" keyEquivalent="," id="8">
                                 <connections>
                                     <action selector="showPreferences:" target="150" id="163"/>
                                 </connections>
@@ -105,7 +105,7 @@
                                     <action selector="saveDocument:" target="-1" id="158"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="另存为…" keyEquivalent="S" id="28">
+                            <menuItem title="保存到…" keyEquivalent="S" id="28">
                                 <connections>
                                     <action selector="saveDocumentAs:" target="-1" id="159"/>
                                 </connections>
@@ -156,7 +156,7 @@
                                     <action selector="paste:" target="-1" id="233"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="粘贴及匹配样式" keyEquivalent="V" id="40">
+                            <menuItem title="粘贴并匹配样式" keyEquivalent="V" id="40">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="pasteAsPlainText:" target="-1" id="235"/>
@@ -272,7 +272,7 @@
                                                 <action selector="toggleSmartInsertDelete:" target="-1" id="237"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="智能 Quotes" id="68">
+                                        <menuItem title="智能引用" id="68">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticQuoteSubstitution:" target="-1" id="213"/>
@@ -483,7 +483,7 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="展开全部" id="111">
+                            <menuItem title="全部展开" id="111">
                                 <connections>
                                     <action selector="expandAll:" target="-1" id="185"/>
                                 </connections>

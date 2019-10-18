@@ -16,7 +16,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="2" customClass="NSApplication"/>
         <customView id="3" customClass="PKGControlledView">
             <rect key="frame" x="0.0" y="0.0" width="645" height="406"/>
@@ -29,9 +29,9 @@
                 <button verticalHuggingPriority="750" id="5">
                     <rect key="frame" x="347" y="12" width="84" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="6">
+                    <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="6">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
@@ -41,11 +41,11 @@ Gw
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" id="7">
-                    <rect key="frame" x="454" y="12" width="93" height="32"/>
+                    <rect key="frame" x="461" y="12" width="80" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="push" title="Previous" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="8">
+                    <buttonCell key="cell" type="push" title="上一步" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="8">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                     </buttonCell>
                     <connections>
                         <action selector="previous:" target="-2" id="22"/>
@@ -54,9 +54,9 @@ Gw
                 <button verticalHuggingPriority="750" id="9">
                     <rect key="frame" x="547" y="12" width="84" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="10">
+                    <buttonCell key="cell" type="push" title="下一步" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="10">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                         <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -72,9 +72,9 @@ DQ
                 <button id="12">
                     <rect key="frame" x="18" y="21" width="122" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="check" title="Show on launch" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="13">
+                    <buttonCell key="cell" type="check" title="在启动时显示" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="13">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
                     </buttonCell>
                     <connections>
                         <action selector="switchShowOnLaunch:" target="-2" id="19"/>

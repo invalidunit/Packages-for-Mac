@@ -28,7 +28,7 @@
                 <button hidden="YES" verticalHuggingPriority="750" id="4">
                     <rect key="frame" x="198" y="22" width="70" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="smallSquare" title="去掉…" bezelStyle="smallSquare" alignment="center" controlSize="small" borderStyle="border" inset="2" id="5">
+                    <buttonCell key="cell" type="smallSquare" title="移除…" bezelStyle="smallSquare" alignment="center" controlSize="small" borderStyle="border" inset="2" id="5">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="11" name=".PingFangSC-Regular"/>
                     </buttonCell>

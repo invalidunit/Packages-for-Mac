@@ -56,6 +56,15 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField verticalHuggingPriority="750" id="10">
+                    <rect key="frame" x="99" y="495" width="56" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="改性:" id="11">
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
                 <textField verticalHuggingPriority="750" id="12">
                     <rect key="frame" x="99" y="512" width="248" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -126,14 +135,14 @@
                 <textField verticalHuggingPriority="750" id="29">
                     <rect key="frame" x="22" y="345" width="73" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="目的地:" id="30">
-                        <font key="font" size="11" name=".PingFangSC-Regular"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Destination:" id="30">
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="31">
-                    <rect key="frame" x="64" y="445" width="32" height="14"/>
+                    <rect key="frame" x="54" y="445" width="42" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="种类:" id="32">
                         <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -151,7 +160,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="35">
-                    <rect key="frame" x="22" y="421" width="73" height="16"/>
+                    <rect key="frame" x="22" y="421" width="73" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="参考文件夹:" id="36">
                         <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -200,17 +209,8 @@
                         </tabViewItem>
                     </tabViewItems>
                 </tabView>
-                <textField verticalHuggingPriority="750" id="10">
-                    <rect key="frame" x="111" y="496" width="30" height="14"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="改性:" id="11">
-                        <font key="font" size="11" name=".PingFangSC-Regular"/>
-                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
-            <point key="canvasLocation" x="139.5" y="154.5"/>
+            <point key="canvasLocation" x="140.5" y="154.5"/>
         </customView>
     </objects>
 </document>

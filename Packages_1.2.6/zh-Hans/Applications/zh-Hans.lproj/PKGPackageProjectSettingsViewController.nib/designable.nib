@@ -136,7 +136,7 @@
                     </connections>
                 </textField>
                 <button id="30">
-                    <rect key="frame" x="153" y="19" width="235" height="18"/>
+                    <rect key="frame" x="153" y="19" width="253" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="check" title="仅从安装资源中排除项目" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="31">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>

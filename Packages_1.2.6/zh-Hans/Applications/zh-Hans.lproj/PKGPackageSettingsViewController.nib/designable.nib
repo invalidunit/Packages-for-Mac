@@ -75,7 +75,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <button id="17">
-                            <rect key="frame" x="117" y="84" width="76" height="18"/>
+                            <rect key="frame" x="117" y="84" width="105" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="重定位" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="18">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -86,7 +86,7 @@
                             </connections>
                         </button>
                         <button id="19">
-                            <rect key="frame" x="117" y="40" width="117" height="18"/>
+                            <rect key="frame" x="117" y="40" width="157" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="遵循符号链接" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="20">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -97,7 +97,7 @@
                             </connections>
                         </button>
                         <button id="21">
-                            <rect key="frame" x="117" y="62" width="117" height="18"/>
+                            <rect key="frame" x="117" y="62" width="224" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="覆盖目录权限" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="22">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -108,7 +108,7 @@
                             </connections>
                         </button>
                         <button id="23">
-                            <rect key="frame" x="117" y="106" width="213" height="18"/>
+                            <rect key="frame" x="117" y="106" width="274" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="需要提供管理员密码才能安装" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="24">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -128,7 +128,7 @@
                             </textFieldCell>
                         </textField>
                         <button id="27">
-                            <rect key="frame" x="117" y="18" width="134" height="18"/>
+                            <rect key="frame" x="117" y="18" width="171" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="check" title="使用 HFS+ 压缩" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="28">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -139,7 +139,7 @@
                             </connections>
                         </button>
                         <textField verticalHuggingPriority="750" id="29">
-                            <rect key="frame" x="250" y="19" width="162" height="14"/>
+                            <rect key="frame" x="248" y="19" width="181" height="14"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="(Mac OS X 10.6 或更高版本)" id="30">
                                 <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -154,7 +154,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <textField verticalHuggingPriority="750" id="32">
-                            <rect key="frame" x="18" y="90" width="47" height="18"/>
+                            <rect key="frame" x="18" y="90" width="41" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="标签" id="33">
                                 <font key="font" size="14" name=".PingFangSC-Medium"/>
@@ -210,7 +210,7 @@
                     </subviews>
                 </customView>
             </subviews>
-            <point key="canvasLocation" x="139.5" y="154.5"/>
+            <point key="canvasLocation" x="139.5" y="153.5"/>
         </customView>
         <customFormatter id="42" customClass="PKGBundleIdentifierFormatter"/>
     </objects>

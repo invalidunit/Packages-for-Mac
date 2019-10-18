@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <textField verticalHuggingPriority="750" id="96">
-                    <rect key="frame" x="18" y="53" width="31" height="17"/>
+                    <rect key="frame" x="18" y="53" width="65" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="更新" id="97">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -30,7 +30,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="98">
-                    <rect key="frame" x="18" y="148" width="177" height="17"/>
+                    <rect key="frame" x="18" y="148" width="181" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="高级选项访问" id="99">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -39,7 +39,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="92">
-                    <rect key="frame" x="48" y="93" width="169" height="14"/>
+                    <rect key="frame" x="48" y="93" width="306" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="允许访问未记录或高级设置。" id="93">
                         <font key="font" size="11" name=".PingFangSC-Regular"/>
@@ -48,7 +48,7 @@
                     </textFieldCell>
                 </textField>
                 <button id="94">
-                    <rect key="frame" x="30" y="18" width="172" height="18"/>
+                    <rect key="frame" x="30" y="18" width="292" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="自动检查 Packages 更新" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="95">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -59,7 +59,7 @@
                     </connections>
                 </button>
                 <button id="90">
-                    <rect key="frame" x="30" y="113" width="152" height="18"/>
+                    <rect key="frame" x="30" y="113" width="214" height="18"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <buttonCell key="cell" type="check" title="显示高级用户选项" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="91">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -70,7 +70,6 @@
                     </connections>
                 </button>
             </subviews>
-            <point key="canvasLocation" x="139.5" y="154.5"/>
         </customView>
     </objects>
 </document>

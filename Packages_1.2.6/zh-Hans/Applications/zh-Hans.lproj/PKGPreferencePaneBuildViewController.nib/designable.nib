@@ -46,7 +46,7 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" id="454">
-                    <rect key="frame" x="18" y="275" width="81" height="17"/>
+                    <rect key="frame" x="18" y="275" width="87" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="快速编译" id="455">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -57,7 +57,7 @@
                 <textField verticalHuggingPriority="750" id="452">
                     <rect key="frame" x="18" y="525" width="167" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="编译结果行为" id="453">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="编译结束后行为" id="453">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -83,7 +83,7 @@
                     </popUpButtonCell>
                 </popUpButton>
                 <textField verticalHuggingPriority="750" id="481">
-                    <rect key="frame" x="54" y="164" width="106" height="17"/>
+                    <rect key="frame" x="50" y="164" width="110" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="故障转移文件夹:" id="482">
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -121,7 +121,7 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" id="450">
-                    <rect key="frame" x="18" y="124" width="172" height="17"/>
+                    <rect key="frame" x="18" y="124" width="178" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="临时编译地点" id="451">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -130,7 +130,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="464">
-                    <rect key="frame" x="18" y="633" width="95" height="17"/>
+                    <rect key="frame" x="18" y="633" width="101" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="编译窗口" id="465">
                         <font key="font" size="13" name=".PingFangSC-Medium"/>
@@ -168,14 +168,14 @@
                 <popUpButton verticalHuggingPriority="750" id="436">
                     <rect key="frame" x="164" y="559" width="124" height="26"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <popUpButtonCell key="cell" type="push" title="从不" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="440" id="437">
+                    <popUpButtonCell key="cell" type="push" title="成功后" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="2" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="439" id="437">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" title="OtherViews" id="438">
                             <items>
-                                <menuItem title="从不" state="on" id="440"/>
+                                <menuItem title="从不" id="440"/>
                                 <menuItem title="总是" tag="1" id="441"/>
-                                <menuItem title="成功" tag="2" id="439"/>
+                                <menuItem title="成功后" state="on" tag="2" id="439"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
@@ -230,7 +230,7 @@
                                 <menuItem title="-" state="on" tag="2" id="473"/>
                                 <menuItem isSeparatorItem="YES" tag="-2" id="474"/>
                                 <menuItem title="询问每个编译" tag="1" id="472"/>
-                                <menuItem title="全部…" tag="-1" id="471"/>
+                                <menuItem title="其他…" tag="-1" id="471"/>
                                 <menuItem isSeparatorItem="YES" tag="-2" id="476"/>
                                 <menuItem title="不要签名" id="475"/>
                             </items>
@@ -243,7 +243,7 @@
                 <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="483" customClass="PKGContentBox">
                     <rect key="frame" x="20" y="60" width="425" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <view key="contentView" id="wKy-Fq-kgI">
+                    <view key="contentView" id="E0G-b6-rE0">
                         <rect key="frame" x="1" y="1" width="423" height="54"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -274,12 +274,12 @@
                 <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="489" customClass="PKGPreferencesTabBox">
                     <rect key="frame" x="20" y="311" width="425" height="206"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" id="vf1-Wh-E9R">
+                    <view key="contentView" id="xZw-U7-a3L">
                         <rect key="frame" x="1" y="1" width="423" height="204"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <popUpButton verticalHuggingPriority="750" id="507">
-                                <rect key="frame" x="102" y="127" width="306" height="26"/>
+                                <rect key="frame" x="97" y="127" width="311" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="项目1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="510" id="508">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -295,7 +295,7 @@
                                 </connections>
                             </popUpButton>
                             <popUpButton verticalHuggingPriority="750" id="503">
-                                <rect key="frame" x="128" y="89" width="280" height="26"/>
+                                <rect key="frame" x="132" y="89" width="276" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="项目1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="506" id="504">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -311,9 +311,9 @@
                                 </connections>
                             </popUpButton>
                             <button id="501">
-                                <rect key="frame" x="18" y="18" width="223" height="18"/>
+                                <rect key="frame" x="18" y="18" width="356" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="如果申请无效，Dock 图标弹跳" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="502">
+                                <buttonCell key="cell" type="check" title="如果申请无效，Packages 的 Dock 图标弹跳" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="502">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
@@ -322,7 +322,7 @@
                                 </connections>
                             </button>
                             <button id="499">
-                                <rect key="frame" x="18" y="56" width="125" height="18"/>
+                                <rect key="frame" x="18" y="56" width="228" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="使用系统通知" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="500">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -333,7 +333,7 @@
                                 </connections>
                             </button>
                             <button id="497">
-                                <rect key="frame" x="18" y="94" width="113" height="18"/>
+                                <rect key="frame" x="18" y="94" width="110" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="使用公告表明" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="498">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -344,7 +344,7 @@
                                 </connections>
                             </button>
                             <button id="495">
-                                <rect key="frame" x="18" y="132" width="87" height="18"/>
+                                <rect key="frame" x="18" y="132" width="83" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="播放声音" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="496">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -387,7 +387,7 @@
                     <color key="fillColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                 </box>
             </subviews>
-            <point key="canvasLocation" x="139.5" y="154.5"/>
+            <point key="canvasLocation" x="140.5" y="154.5"/>
         </customView>
     </objects>
 </document>

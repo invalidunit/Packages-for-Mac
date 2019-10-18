@@ -56,7 +56,7 @@
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" id="11">
-                        <rect key="frame" x="441" y="13" width="82" height="32"/>
+                        <rect key="frame" x="460" y="13" width="67" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="12">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -70,11 +70,11 @@ Gw
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" tag="1" id="13">
-                        <rect key="frame" x="530" y="13" width="82" height="32"/>
+                        <rect key="frame" x="539" y="13" width="73" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Okay" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="14">
+                        <buttonCell key="cell" type="push" title="好" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="14">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -93,7 +93,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                         <subviews>
                             <button id="18">
-                                <rect key="frame" x="18" y="11" width="188" height="18"/>
+                                <rect key="frame" x="18" y="11" width="303" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonCell key="cell" type="check" title="针对每个卷检查此要求" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="19">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -112,7 +112,7 @@ DQ
                     <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="21" customClass="PKGContentBox">
                         <rect key="frame" x="20" y="166" width="586" height="244"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="contentView" id="XHU-Fw-g3A">
+                        <view key="contentView" id="aNt-Tf-TTJ">
                             <rect key="frame" x="1" y="1" width="584" height="242"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
