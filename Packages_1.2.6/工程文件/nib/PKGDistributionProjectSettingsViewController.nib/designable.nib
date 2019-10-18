@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKGDistributionProjectSettingsViewController">
+            <connections>
+                <outlet property="_advancedOptionsPlaceHolderView" destination="42" id="44"/>
+                <outlet property="_buildFormatPopUpButton" destination="26" id="45"/>
+                <outlet property="_buildFormatWarningLabel" destination="24" id="46"/>
+                <outlet property="_buildNameTextField" destination="18" id="47"/>
+                <outlet property="_buildReferenceFolderPopUpButton" destination="32" id="48"/>
+                <outlet property="_buildSectionView" destination="4" id="49"/>
+                <outlet property="_exclusionsPlaceHolderView" destination="31" id="50"/>
+                <outlet property="_filterPayloadOnlyCheckbox" destination="20" id="51"/>
+                <outlet property="buildPathTextField" destination="16" id="52"/>
+                <outlet property="view" destination="3" id="53"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="2" customClass="NSApplication"/>
+        <customView id="3" customClass="PKGControlledView">
+            <rect key="frame" x="0.0" y="0.0" width="692" height="581"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView id="4">
+                    <rect key="frame" x="0.0" y="172" width="692" height="409"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" id="5">
+                            <rect key="frame" x="90" y="334" width="50" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="名称:" id="6">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" id="7">
+                            <rect key="frame" x="96" y="302" width="44" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="路径:" id="8">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <popUpButton verticalHuggingPriority="750" id="9">
+                            <rect key="frame" x="635" y="299" width="37" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="smallSquare" title=" " bezelStyle="smallSquare" imagePosition="only" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="12" id="10">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" title="OtherViews" id="11">
+                                    <items>
+                                        <menuItem title=" " image="NSActionTemplate" hidden="YES" id="12"/>
+                                        <menuItem title="选择…" id="13">
+                                            <connections>
+                                                <action selector="selectBuildPath:" target="-2" id="62"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="14"/>
+                                        <menuItem title="在 Finder 查看" id="15">
+                                            <connections>
+                                                <action selector="showBuildPathInFinder:" target="-2" id="60"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                        </popUpButton>
+                        <textField verticalHuggingPriority="750" id="16" customClass="PKGFilePathTextField">
+                            <rect key="frame" x="146" y="300" width="481" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="17" customClass="PKGFilePathTextFieldCell">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="setBuildPath:" target="-2" id="61"/>
+                            </connections>
+                        </textField>
+                        <textField verticalHuggingPriority="750" id="18">
+                            <rect key="frame" x="146" y="332" width="481" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="19">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="54"/>
+                                <outlet property="formatter" destination="43" id="55"/>
+                                <outlet property="nextKeyView" destination="16" id="56"/>
+                            </connections>
+                        </textField>
+                        <button id="20">
+                            <rect key="frame" x="153" y="18" width="235" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <buttonCell key="cell" type="check" title="仅从安装资源中排除项目" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="21">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="setFilterPayloadOnly:" target="-2" id="58"/>
+                            </connections>
+                        </button>
+                        <textField verticalHuggingPriority="750" id="22">
+                            <rect key="frame" x="81" y="241" width="59" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="格式:" id="23">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" id="24">
+                            <rect key="frame" x="247" y="241" width="442" height="14"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="仅在 Mac OS X 10.6 或更高版本上支持 Flat 格式的安装程序插件。" id="25">
+                                <font key="font" size="11" name=".PingFangSC-Regular"/>
+                                <color key="textColor" red="1" green="0.50196081000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <popUpButton verticalHuggingPriority="750" id="26">
+                            <rect key="frame" x="144" y="235" width="89" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" title="Flat" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="29" id="27">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" title="OtherViews" id="28">
+                                    <items>
+                                        <menuItem title="Flat" state="on" id="29"/>
+                                        <menuItem title="Bundle" tag="1" id="30"/>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="setBuildFormat:" target="-2" id="57"/>
+                            </connections>
+                        </popUpButton>
+                        <customView id="31">
+                            <rect key="frame" x="0.0" y="48" width="692" height="174"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </customView>
+                        <popUpButton verticalHuggingPriority="750" id="32">
+                            <rect key="frame" x="144" y="265" width="279" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="35" id="33" customClass="PKGReferenceFolderPopupButtonCell">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" title="OtherViews" id="34">
+                                    <items>
+                                        <menuItem title="-" state="on" id="35"/>
+                                        <menuItem isSeparatorItem="YES" id="36">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="其他…" tag="-1" id="37">
+                                            <connections>
+                                                <action selector="setReferenceFolder:" target="-2" id="59"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                        </popUpButton>
+                        <textField verticalHuggingPriority="750" id="38">
+                            <rect key="frame" x="14" y="271" width="126" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="参考文件夹:" id="39">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" id="40">
+                            <rect key="frame" x="18" y="371" width="54" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="编译" id="41">
+                                <font key="font" size="14" name=".PingFangSC-Medium"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                </customView>
+                <customView id="42" customClass="PKGAlternateSectionView">
+                    <rect key="frame" x="0.0" y="0.0" width="694" height="173"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </customView>
+            </subviews>
+        </customView>
+        <customFormatter id="43" customClass="PKGProjectNameFormatter"/>
+    </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+    </resources>
+</document>

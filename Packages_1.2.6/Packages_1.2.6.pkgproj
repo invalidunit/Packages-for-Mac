@@ -578,17 +578,51 @@
 									<array>
 										<dict>
 											<key>CHILDREN</key>
-											<array/>
+											<array>
+												<dict>
+													<key>CHILDREN</key>
+													<array>
+														<dict>
+															<key>CHILDREN</key>
+															<array/>
+															<key>GID</key>
+															<integer>80</integer>
+															<key>PATH</key>
+															<string>/Users/zhaonan/Packages/Packages_1.2.6/zh-Hans/Applications/zh-Hans.lproj</string>
+															<key>PATH_TYPE</key>
+															<integer>0</integer>
+															<key>PERMISSIONS</key>
+															<integer>493</integer>
+															<key>TYPE</key>
+															<integer>3</integer>
+															<key>UID</key>
+															<integer>0</integer>
+														</dict>
+													</array>
+													<key>GID</key>
+													<integer>80</integer>
+													<key>PATH</key>
+													<string>Resources</string>
+													<key>PATH_TYPE</key>
+													<integer>2</integer>
+													<key>PERMISSIONS</key>
+													<integer>509</integer>
+													<key>TYPE</key>
+													<integer>2</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+											</array>
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>/Users/zhaonan/Packages/Packages_1.2.6/zh-Hans/Applications/zh-Hans.lproj</string>
+											<string>Contents</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>2</integer>
 											<key>PERMISSIONS</key>
-											<integer>493</integer>
+											<integer>509</integer>
 											<key>TYPE</key>
-											<integer>3</integer>
+											<integer>2</integer>
 											<key>UID</key>
 											<integer>0</integer>
 										</dict>
