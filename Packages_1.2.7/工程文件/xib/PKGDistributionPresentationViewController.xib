@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKGDistributionPresentationViewController">
+            <connections>
+                <outlet property="_accessoryPlaceHolderView" destination="5" id="51"/>
+                <outlet property="_appearanceDarkRadioButton" destination="34" id="52"/>
+                <outlet property="_appearanceLightRadioButton" destination="32" id="53"/>
+                <outlet property="_appearancePreviewBox" destination="31" id="54"/>
+                <outlet property="_backgroundView" destination="18" id="55"/>
+                <outlet property="_continueButton" destination="25" id="56"/>
+                <outlet property="_goBackButton" destination="23" id="57"/>
+                <outlet property="_inspectorContentsView" destination="50" id="58"/>
+                <outlet property="_inspectorPopUpButton" destination="38" id="59"/>
+                <outlet property="_languagePreviewPopUpButton" destination="7" id="60"/>
+                <outlet property="_leftView" destination="4" id="61"/>
+                <outlet property="_listView" destination="27" id="62"/>
+                <outlet property="_pageTitleView" destination="29" id="63"/>
+                <outlet property="_pluginAddButton" destination="14" id="64"/>
+                <outlet property="_pluginRemoveButton" destination="12" id="65"/>
+                <outlet property="_printButton" destination="21" id="66"/>
+                <outlet property="_rightView" destination="36" id="67"/>
+                <outlet property="_saveButton" destination="19" id="68"/>
+                <outlet property="_sectionContentsView" destination="28" id="69"/>
+                <outlet property="_windowView" destination="16" id="70"/>
+                <outlet property="view" destination="3" id="71"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="2" customClass="NSApplication"/>
+        <customView id="3" customClass="PKGControlledView">
+            <rect key="frame" x="0.0" y="0.0" width="1028" height="557"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView id="4" customClass="PKGPresentationContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="665" height="557"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <customView id="5">
+                            <rect key="frame" x="213" y="15" width="255" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </customView>
+                        <box title="安装包语言" id="6" customClass="PKGPresentationBox">
+                            <rect key="frame" x="476" y="16" width="169" height="62"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <view key="contentView" id="33n-fc-NSS">
+                                <rect key="frame" x="2" y="2" width="165" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <popUpButton id="7">
+                                        <rect key="frame" x="13" y="7" width="139" height="27"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <popUpButtonCell key="cell" type="bevel" title="项目1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="10" id="8" customClass="PKGPresentationSettingsPopUpButtonCell">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="systemBold"/>
+                                            <menu key="menu" title="OtherViews" id="9">
+                                                <items>
+                                                    <menuItem title="项目1" state="on" id="10"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                        <connections>
+                                            <action selector="switchPreviewLanguage:" target="-2" id="75"/>
+                                        </connections>
+                                    </popUpButton>
+                                </subviews>
+                            </view>
+                            <font key="titleFont" size="12" name=".PingFangSC-Medium"/>
+                        </box>
+                        <box title="插件" id="11" customClass="PKGPresentationBox">
+                            <rect key="frame" x="21" y="16" width="92" height="62"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view key="contentView" id="44y-V7-OwD">
+                                <rect key="frame" x="2" y="2" width="88" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button toolTip="Remove an Installer Plugin" id="12" customClass="PKGPresentationPluginButton">
+                                        <rect key="frame" x="47" y="9" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" enabled="NO" borderStyle="border" inset="2" id="13" customClass="PKGPresentationPluginButtonCell">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="removePlugin:" target="-2" id="76"/>
+                                        </connections>
+                                    </button>
+                                    <button toolTip="Add an Installer Plugin." id="14" customClass="PKGPresentationPluginButton">
+                                        <rect key="frame" x="17" y="9" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="15" customClass="PKGPresentationPluginButtonCell">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addPlugin:" target="-2" id="74"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <font key="titleFont" size="13" name=".PingFangSC-Medium"/>
+                        </box>
+                        <customView id="16" customClass="HIWWindowView">
+                            <rect key="frame" x="13" y="88" width="640" height="451"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <box autoresizesSubviews="NO" boxType="custom" borderType="none" borderWidth="0.0" title="Box" id="17">
+                                    <rect key="frame" x="10" y="9" width="620" height="418"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <view key="contentView" id="3w9-Ll-3DJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="620" height="418"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <customView id="18" customClass="PKGPresentationImageView">
+                                                <rect key="frame" x="0.0" y="1" width="620" height="417"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" id="19">
+                                                        <rect key="frame" x="273" y="7" width="98" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <buttonCell key="cell" type="push" title="&lt;&lt; DO" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="20">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" id="21">
+                                                        <rect key="frame" x="175" y="7" width="98" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <buttonCell key="cell" type="push" title="&lt;&lt; DO" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="22">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" id="23">
+                                                        <rect key="frame" x="410" y="7" width="98" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                        <buttonCell key="cell" type="push" title="&lt;&lt; DO" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="24">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" id="25">
+                                                        <rect key="frame" x="508" y="7" width="98" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                        <buttonCell key="cell" type="push" title="&lt;&lt; DO" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="26">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                    <customView id="27" customClass="PKGPresentationListView">
+                                                        <rect key="frame" x="18" y="49" width="154" height="331"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                                    </customView>
+                                                    <customView id="28">
+                                                        <rect key="frame" x="181" y="49" width="418" height="330"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </customView>
+                                                    <textField verticalHuggingPriority="750" id="29" customClass="PKGPresentationPaneTitleView">
+                                                        <rect key="frame" x="181" y="382" width="418" height="19"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; DO NOT LOCALIZE &gt;&gt;" id="30">
+                                                            <font key="font" metaFont="systemBold" size="14"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </customView>
+                                        </subviews>
+                                    </view>
+                                </box>
+                            </subviews>
+                        </customView>
+                        <box title="模式" id="31" customClass="PKGPresentationBox">
+                            <rect key="frame" x="121" y="16" width="84" height="62"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view key="contentView" id="40z-bw-G5K">
+                                <rect key="frame" x="2" y="2" width="80" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button toolTip="Light Appearance" id="32">
+                                        <rect key="frame" x="11" y="9" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="AppearanceLightTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="33" customClass="PKGPresentationAppearanceRadioButtonCell">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="switchPreviewAppearance:" target="-2" id="73"/>
+                                        </connections>
+                                    </button>
+                                    <button toolTip="Dark Appearance" tag="1" id="34">
+                                        <rect key="frame" x="43" y="9" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="AppearanceDarkTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="35" customClass="PKGPresentationAppearanceRadioButtonCell">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="switchPreviewAppearance:" target="-2" id="77"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <font key="titleFont" size="13" name=".PingFangSC-Medium"/>
+                        </box>
+                    </subviews>
+                </customView>
+                <customView id="36" customClass="PKGRightInspectorView">
+                    <rect key="frame" x="665" y="0.0" width="363" height="557"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <box verticalHuggingPriority="750" boxType="separator" id="37">
+                            <rect key="frame" x="0.0" y="513" width="363" height="5"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        </box>
+                        <popUpButton verticalHuggingPriority="750" id="38">
+                            <rect key="frame" x="79" y="524" width="205" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" title="标题" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="41" id="39">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                                <menu key="menu" title="OtherViews" id="40">
+                                    <items>
+                                        <menuItem title="标题" state="on" keyEquivalent="0" id="41">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="背景" tag="1" keyEquivalent="1" id="42">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="介绍" tag="2" keyEquivalent="2" id="43">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="请先阅读" tag="3" keyEquivalent="3" id="44">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="许可 &amp; 条款" tag="4" keyEquivalent="4" id="45">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="安装类型" tag="5" keyEquivalent="5" id="46">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem title="安装结束" tag="6" keyEquivalent="6" id="47">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" title=" " tag="-555" id="48">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="安装程序插件" tag="7" id="49">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="switchInspectedView:" target="-2" id="72"/>
+                            </connections>
+                        </popUpButton>
+                        <customView id="50">
+                            <rect key="frame" x="1" y="0.0" width="362" height="516"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </customView>
+                    </subviews>
+                </customView>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="AppearanceDarkTemplate" width="128" height="128"/>
+        <image name="AppearanceLightTemplate" width="128" height="128"/>
+    </resources>
+</document>

@@ -16,7 +16,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="2" customClass="NSApplication"/>
         <customView id="3" customClass="PKGRetainedCycleControlledView">
             <rect key="frame" x="0.0" y="0.0" width="374" height="95"/>
@@ -64,12 +64,12 @@
                         <popUpButton verticalHuggingPriority="750" id="12">
                             <rect key="frame" x="127" y="17" width="225" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <popUpButtonCell key="cell" type="push" title="相对于参考文件夹" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="3" imageScaling="proportionallyDown" inset="2" id="13" customClass="PKGReferencePopupButtonCell">
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="13" customClass="PKGReferencePopupButtonCell">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
                                 <menu key="menu" id="14">
                                     <items>
-                                        <menuItem title="相对于参考文件夹" state="on" tag="3" id="15"/>
+                                        <menuItem title="相对于参考文件夹" tag="3" id="15"/>
                                         <menuItem title="相对路径" tag="1" id="16"/>
                                         <menuItem title="绝对路径" id="17"/>
                                     </items>
@@ -85,6 +85,7 @@
             <connections>
                 <outlet property="viewController" destination="-2" id="23"/>
             </connections>
+            <point key="canvasLocation" x="140" y="154.5"/>
         </customView>
     </objects>
 </document>
