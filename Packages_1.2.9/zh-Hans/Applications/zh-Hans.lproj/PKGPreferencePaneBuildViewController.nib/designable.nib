@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PKGPreferencePaneBuildViewController">
+            <connections>
+                <outlet property="_announcementVoicePopUpButton" destination="512" id="526"/>
+                <outlet property="_bounceIconInDockCheckBox" destination="510" id="527"/>
+                <outlet property="_buildResultBehaviorsTabHeaderView" destination="499" id="528"/>
+                <outlet property="_embedTrustedTimestampCheckBox" destination="522" id="529"/>
+                <outlet property="_hideBuildWindowBehaviorPopUpButton" destination="445" id="530"/>
+                <outlet property="_notifyUsingSystemNotificationCheckBox" destination="508" id="531"/>
+                <outlet property="_playSoundCheckBox" destination="504" id="532"/>
+                <outlet property="_quickBuildFailoverFolderPopUpButton" destination="467" id="533"/>
+                <outlet property="_quickBuildSigningCertificatePopUpButton" destination="477" id="534"/>
+                <outlet property="_quickBuildUseBundleVersionCheckBox" destination="465" id="535"/>
+                <outlet property="_showBuildWindowBehaviorPopUpButton" destination="435" id="536"/>
+                <outlet property="_soundNamePopUpButton" destination="516" id="537"/>
+                <outlet property="_speakAnnouncementCheckBox" destination="506" id="538"/>
+                <outlet property="_temporaryBuildLocationIconImageView" destination="496" id="539"/>
+                <outlet property="_temporaryBuildLocationTextField" destination="494" id="540"/>
+                <outlet property="_temporaryBuildLocationView" destination="493" id="541"/>
+                <outlet property="_unsavedProjectBehaviorPopUpButton" destination="453" id="542"/>
+                <outlet property="view" destination="434" id="543"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="433" customClass="NSApplication"/>
+        <customView id="434" customClass="PKGControlledView">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="785"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button id="465">
+                    <rect key="frame" x="164" y="199" width="148" height="18"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="check" title="使用包版本" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="466">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setQuickBuildUseBundleVersion:" target="-2" id="548"/>
+                    </connections>
+                </button>
+                <button id="522">
+                    <rect key="frame" x="164" y="311" width="153" height="18"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="check" title="嵌入时间戳" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="523">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="switchEmbedTrustedTimestamp:" target="-2" id="559"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="463">
+                    <rect key="frame" x="18" y="275" width="87" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="快速编译" id="464">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="520">
+                    <rect key="frame" x="18" y="349" width="64" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="签署" id="521">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="461">
+                    <rect key="frame" x="18" y="599" width="167" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="编译结束后行为" id="462">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="467">
+                    <rect key="frame" x="164" y="158" width="279" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="472" id="468">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" id="469">
+                            <items>
+                                <menuItem title="-" state="on" id="472"/>
+                                <menuItem isSeparatorItem="YES" id="470"/>
+                                <menuItem title="选择…" tag="1" id="471">
+                                    <connections>
+                                        <action selector="switchQuickBuildFailoverFolder:" target="-2" id="549"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="490">
+                    <rect key="frame" x="58" y="164" width="102" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="故障转移文件夹:" id="491">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="488">
+                    <rect key="frame" x="42" y="201" width="118" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="打包版本:" id="489">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="486">
+                    <rect key="frame" x="18" y="238" width="142" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="签署证书:" id="487">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="524">
+                    <rect key="frame" x="34" y="312" width="126" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="受信任的时间戳:" id="525">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" id="475">
+                    <rect key="frame" x="344" y="13" width="102" height="32"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="push" title="更改…" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="476">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setTemporaryBuildLocation:" target="-2" id="547"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="459">
+                    <rect key="frame" x="18" y="124" width="178" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="临时编译地点" id="460">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="473">
+                    <rect key="frame" x="18" y="707" width="101" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="编译窗口" id="474">
+                        <font key="font" size="13" name=".PingFangSC-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="453">
+                    <rect key="frame" x="164" y="741" width="168" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="编译前询问" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="456" id="454">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" id="455">
+                            <items>
+                                <menuItem title="编译前询问" state="on" id="456"/>
+                                <menuItem title="直接保存" tag="1" id="457"/>
+                                <menuItem title="从不保存" tag="2" id="458"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchUnsavedProjectBehavior:" target="-2" id="546"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="451">
+                    <rect key="frame" x="50" y="747" width="110" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="未保存的项目:" id="452">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="445">
+                    <rect key="frame" x="164" y="633" width="124" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="成功后" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="2" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="448" id="446">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" id="447">
+                            <items>
+                                <menuItem title="从不" id="449"/>
+                                <menuItem title="总是" tag="1" id="450"/>
+                                <menuItem title="成功后" state="on" tag="2" id="448"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchHideBuildWindowBehavior:" target="-2" id="545"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="443">
+                    <rect key="frame" x="46" y="639" width="114" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="编译后隐藏:" id="444">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="441">
+                    <rect key="frame" x="30" y="670" width="130" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="在编译期间显示:" id="442">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="435">
+                    <rect key="frame" x="164" y="664" width="124" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="关于错误" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="2" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="440" id="436">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" id="437">
+                            <items>
+                                <menuItem title="总是" id="438"/>
+                                <menuItem title="从不" tag="1" id="439"/>
+                                <menuItem title="关于错误" state="on" tag="2" id="440"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchShowBuildWindowBehavior:" target="-2" id="544"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="477">
+                    <rect key="frame" x="164" y="232" width="279" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingMiddle" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="482" id="478">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="479">
+                            <items>
+                                <menuItem title="-" state="on" tag="2" id="482"/>
+                                <menuItem isSeparatorItem="YES" tag="-2" id="483"/>
+                                <menuItem title="询问每个编译" tag="1" id="481"/>
+                                <menuItem title="其他…" tag="-1" id="480"/>
+                                <menuItem isSeparatorItem="YES" tag="-2" id="485"/>
+                                <menuItem title="不要签名" id="484"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="switchQuickBuildSigningCertificate:" target="-2" id="558"/>
+                    </connections>
+                </popUpButton>
+                <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="492" customClass="PKGContentBox">
+                    <rect key="frame" x="20" y="60" width="425" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" id="mv9-bT-kBi">
+                        <rect key="frame" x="1" y="1" width="423" height="54"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView id="493" customClass="PKGTemporaryBuildLocationView">
+                                <rect key="frame" x="0.0" y="0.0" width="423" height="54"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField verticalHuggingPriority="750" id="494" customClass="PKGVerticallyCenteredTextField">
+                                        <rect key="frame" x="54" y="12" width="353" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" id="495">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" white="0.39781021999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView id="496">
+                                        <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="497"/>
+                                    </imageView>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                    </view>
+                    <color key="fillColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                </box>
+                <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" id="498" customClass="PKGPreferencesTabBox">
+                    <rect key="frame" x="20" y="385" width="425" height="206"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="2M6-Iw-88f">
+                        <rect key="frame" x="1" y="1" width="423" height="204"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <popUpButton verticalHuggingPriority="750" id="516">
+                                <rect key="frame" x="98" y="127" width="310" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="项目1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="519" id="517">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="518">
+                                        <items>
+                                            <menuItem title="项目1" state="on" id="519"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="switchSoundName:" target="-2" id="557"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" id="512">
+                                <rect key="frame" x="124" y="89" width="284" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="项目1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="515" id="513">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="514">
+                                        <items>
+                                            <menuItem title="项目1" state="on" id="515"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="switchAnnouncementVoice:" target="-2" id="556"/>
+                                </connections>
+                            </popUpButton>
+                            <button id="510">
+                                <rect key="frame" x="18" y="18" width="356" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="如果申请无效，Packages 的 Dock 图标弹跳" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="511">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="switchBounceIconInDock:" target="-2" id="555"/>
+                                </connections>
+                            </button>
+                            <button id="508">
+                                <rect key="frame" x="18" y="56" width="228" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="使用系统通知" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="509">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="switchNotifyUsingSystemNotification:" target="-2" id="554"/>
+                                </connections>
+                            </button>
+                            <button id="506">
+                                <rect key="frame" x="18" y="94" width="102" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="使用公告表明" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="507">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="switchSpeakAnnouncement:" target="-2" id="553"/>
+                                </connections>
+                            </button>
+                            <button id="504">
+                                <rect key="frame" x="18" y="132" width="76" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="播放声音" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="505">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="switchPlaySound:" target="-2" id="552"/>
+                                </connections>
+                            </button>
+                            <customView id="499" customClass="PKGPreferencesTabHeaderView">
+                                <rect key="frame" x="0.0" y="171" width="423" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button id="500" customClass="PKGPreferencesTabButton">
+                                        <rect key="frame" x="111" y="6" width="93" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="radio" title="成功" bezelStyle="regularSquare" alignment="center" inset="2" id="501">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="switchBuildResultBehavior:" target="-2" id="550"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1" id="502" customClass="PKGPreferencesTabButton">
+                                        <rect key="frame" x="220" y="6" width="93" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="radio" title="失败" bezelStyle="regularSquare" alignment="center" tag="1" inset="2" id="503">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="switchBuildResultBehavior:" target="-2" id="551"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                    </view>
+                    <color key="fillColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="140.5" y="153.5"/>
+        </customView>
+    </objects>
+</document>
